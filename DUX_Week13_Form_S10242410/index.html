@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Handlee&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:wght@200&family=Roboto+Condensed:wght@500&display=swap"
+    rel="stylesheet">
+
+<body>
+  <script src="scripts.js"></script>
+
+  <h2> Volunteer Form </h2>
+  <div class="bg3">
+    <hr style="border-top: navy dashed 3px;">
+
+    <p style="font-size: 19px;">
+        
+        <br>Hello! This is a form created by Natalie Peh! It is specially designed with features 
+        <br>that contribute to a stellar user experience. By incorporating optional fields, users 
+        <br>have the flexibility to provide additional information without feeling overwhelmed. 
+        <br>The inclusion of a animated and prominent Call-to-Action (CTA) button ensures a clear and 
+        <br>straightforward submission process, guiding users through the form effortlessly.
+        <br> <br>
+        <br>Taking into account the earlier considerations, this form is meticulously crafted to be 
+        <br>efficient and user-friendly. Unnecessary elements have been trimmed down to enhance focus,
+        <br>while concise and precise text labels guide users on what information is required. 
+        <br>Distractions, such as adverts or animations, have been purposefully omitted from fields 
+        <br>requesting sensitive data to maintain a secure environment.
+ <br> <br>
+ <br>Field lengths have been optimized to provide users with visual cues about the expected input 
+ <br>length, and the form is designed to accept a range of inputs, ensuring adaptability. Inline 
+ <br>client-side validation adds an extra layer of user support, catching potential errors in 
+ <br>real-time, while server-side validation guarantees the integrity of the submitted data.
+<br> <br>
+<br>The visual hierarchy of top-aligned versus left-aligned labels has been thoughtfully 
+<br>considered, balancing aesthetics and readability. Secondary form actions, like Cancel or 
+<br>Previous, are strategically styled and positioned to minimize the likelihood of accidental 
+<br>activation, ensuring a seamless user journey.
+<br> <br>
+<br>Once the form is submitted, users can expect prompt and clear feedback, enhancing transparency
+ <br>and user satisfaction. Thank you for choosing this form designed with your user experience in mind.
+
+        <br>
+      <br> <br>
+      <b>Details of the talk:</b><br>
+      Date: 18 Jan 2024<br>
+      Time: 7am to 10pm<br>
+      Venue: LT58A<br>
+
+      Sign up now to catch Prof Wei Meng Loopi's tear jerking talk and exciting pre-events activities with prizes to be won! :D
+<br>
+<br>
+<br>
+
+    <div class="bg2">
+      <hr style="border-top: black dashed 3px;">
+      </p>
+
+
+      <div class="container">
+        <div class="form">
+          <form action="success_page.html" onsubmit="return validateForm()">
+            <div class="row">
+                
+              </div>
+            <h3>Application Form</h1>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="fname">Student ID(e.g. 12345678A, excluding the 'S')<b>*</b></label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname" placeholder="Your first name.." required
+                        style="width: 200px;">
+                    </div>
+                  </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name<b>*</b></label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your first name.." required
+                    style="width: 200px;">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name<b>*</b></label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." required
+                    style="width: 200px;">
+                </div>
+              </div>
+             
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Email Address<b>*</b></label>
+                </div>
+                <div class="col-75">
+                  <input type="email" id="email" name="email" placeholder="Your email.." required
+                    style="width: 400px; height: 40px;">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Telephone Number<b>*</b></label>
+                </div>
+                <div class="col-75">
+                  <input type="tel" pattern="[0-9]{3}[0-9]{2}[0-9]{3}" id="tel" name="tel" placeholder="Your contact number.." required
+                    style="width: 200px; height: 40px;">
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="area">Which area do you stay?<b>*</b></label>
+                </div>
+                <div class="col-75">
+                  <select id="area" name="area" required style="width: 300px;">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Central">Central</option>
+                    <option value="North">North</option>
+                    <option value="South">South</option>
+                    <option value="East">East</option>
+                    <option value="West">West</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="child">Academic School<b>*</b></label>
+                </div>
+                <div class="col-75">
+                  <select id="child" name="child" required style="width: 300px;">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Beaty">Business and Accounting</option>
+                    <option value="Yappin">Design and Environment</option>
+                    <option value="Bepopo">Film and Media Studies</option>
+                    <option value="Looloo">Health Sciences</option>
+                    <option value="Sunny">Humanities and Social Sciences</option>
+                    <option value="Looloo">Infocomm Technology</option>
+                    <option value="Sunny">Life Sciences and Chemical Technology</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="income">Diploma<b>*</b></label>
+                </div>
+                <div class="col-75">
+                  <select id="income" name="income" required style="width: 300px;">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Below $2000">CSF</option>
+                    <option value="$2001 to $3000">DS</option>
+                    <option value="$3001 to $5000">IM</option>
+                    <option value="More than $5001">IT</option>
+                    <option value="More than $5001">CICTP</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="income">Year of Study<b>*</b></label>
+                </div>
+                <div class="col-75">
+                  <select id="income" name="income" required style="width: 300px;">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Below $2000">Year 0 (PFP)</option>
+                    <option value="$2001 to $3000">Year 1</option>
+                    <option value="$3001 to $5000">Year 2</option>
+                    <option value="More than $5001">Year 3</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="income">I am able to make it for the full duration of the event<b>*</b></label>
+                </div>
+                <div class="col-75">
+                  <select id="income" name="income" required style="width: 300px;">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Below $2000">Yes</option>
+                    <option value="$2001 to $3000">No</option>
+                    </select>
+                    </div>
+                    </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="experience">Have you had any previous experience with Sustainability?</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="experience" name="experience"
+                    placeholder="Tell us about your previous experience, if any.."
+                    style="height:200px; width:90%" ></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="contact">Best way to contact you<b>*</b></label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="contact" name="contact"
+                    placeholder="Your preferred contact method (e.g., email, phone).." required style="width: 400px;">
+                </div>
+              </div>
+
+
+              <div class="row">
+                <input type="reset">
+                <input type="submit" value="Submit >">
+              </div>
+
+              
+
+          </form>
+
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+</body>
+
+</html>
